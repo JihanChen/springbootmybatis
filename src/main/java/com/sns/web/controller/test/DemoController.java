@@ -71,4 +71,11 @@ public class DemoController {
         return demo.getName();
     }
 
+    @RequestMapping("getByName1")
+    @ResponseBody
+    public String getByName1(@RequestParam String name) {
+        Demo demo = demoService.getByName1(name);
+        return demo.getName();
+    }
+
 }

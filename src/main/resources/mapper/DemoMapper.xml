@@ -12,4 +12,7 @@
   <select id="getByName" resultType="com.sns.model.test.Demo">
       select * from gen_test_demo where name = #{name,jdbcType=VARCHAR} limit 1
   </select>
+  <select id="getByName1" resultType="com.sns.model.test.Demo">
+    select * from gen_test_demo where name = #{name,jdbcType=VARCHAR} limit 1
+  </select>
 </mapper>
